@@ -1,6 +1,6 @@
 import styles from './Statistics.module.css'
 export const Statistics = (data) => {
-  console.log(data);
+  
   return (
     <section className={styles.Statistics}>
       {data.title !== undefined && (

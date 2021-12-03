@@ -1,7 +1,6 @@
 import styles from './FriendItem.module.css'
 
 export const friendItem = (fr) => {
-   console.log(fr);
    return (
    <div>
       {fr.friends.map(p => (

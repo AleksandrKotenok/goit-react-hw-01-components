@@ -2,10 +2,12 @@
 import { Profile } from '../Profile/Profile.jsx'
 import { Statistics } from '../Statistics/Statistics.jsx'
 import { FriendList } from '../Friends/FriendList.jsx'
+import { TransactionHistory } from '../TransactionHistory/TransactionHistory.jsx'
 
 import user from '../data/user.json'
 import data from '../data/statistics.json'
 import friends from '../data/friends.json'
+import transactions from '../data/transactions.json'
 import styles from './App.module.css'
 function App() {
   return (
@@ -30,6 +32,10 @@ function App() {
       <h2 className={styles.Task}>TASK #3</h2>
         <FriendList friends={friends} />
       </section>
+      <section className={styles.ThirdTask}>
+        <h2 className={styles.Task}>TASK #4</h2>
+        <TransactionHistory items={transactions} />
+    </section>
     </div>
   )
 }
