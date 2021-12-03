@@ -17,20 +17,22 @@
   margin-left: 15px;
 }
 .StatusOn {
+  font-size: 12px;
   margin-right: 15px;
   background-color: green;
   border-radius: 8px;
   padding: 5px;
 }
 .StatusOff {
+  font-size: 12px;
   margin-right: 15px;
   background-color: red;
   border-radius: 8px;
   padding: 5px;
 }
 .Avatar {
-  height: 200px;
-  width: 200px;
+  height: 50px;
+  width: 50px;
   margin-top: 20px;
   border-radius: 50%;
   background-color: rgb(194, 194, 194);

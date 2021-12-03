@@ -1,0 +1,46 @@
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+a,
+li {
+  text-decoration: none;
+}
+.Container {
+  padding: 0 15px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+.Task {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.FirstTask {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(238, 238, 238);
+  align-items: center;
+}
+.ThirdTask {
+  background-color: rgb(201, 245, 158);
+}
