@@ -4,7 +4,7 @@ import { Profile } from '../Profile/Profile.jsx'
 import { Statistics } from '../Statistics/Statistics.jsx'
 import { FriendList } from '../Friends/FriendList.jsx'
 
-import '../Friends/FriendList.module.css'
+
 
 import user from '../data/user.json'
 import data from '../data/statistics.json'
