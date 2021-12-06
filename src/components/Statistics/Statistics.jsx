@@ -1,6 +1,6 @@
+import PropTypes from 'prop-types';
 import styles from './Statistics.module.css'
 export const Statistics = (data) => {
-  
   return (
     <section className={styles.Statistics}>
       {data.title !== undefined && (
@@ -15,4 +15,14 @@ export const Statistics = (data) => {
       </ul>
     </section>
   )
+}
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+     PropTypes.shape({
+     label: PropTypes.string.isRequired,
+     percentage: PropTypes.number.isRequired,
+     id: PropTypes.string.isRequired
+  }))
 }

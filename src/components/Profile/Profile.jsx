@@ -1,12 +1,13 @@
+import PropTypes from 'prop-types';
 import styles from './Profile.module.css'
 export const Profile = (p) => {
    return (
       <div className={styles.Profile}>
          <div className={styles.Description}>
             <img
-            src={p.avatar}
-            alt="User avatar"
-            className={styles.Avatar}
+               src={p.avatar}
+               alt="User avatar"
+               className={styles.Avatar}
             />
             <p className={styles.Name}>{p.username}</p>
             <p className={styles.Tag}>@{p.tag}</p>
@@ -28,6 +29,15 @@ export const Profile = (p) => {
          </ul>
       </div>
    )
+};
+Profile.defaultProps = {
+   avatar: "https://cdn-icons-png.flaticon.com/512/616/616438.png"
 }
-
-
+Profile.propTypes = {
+   
+   username: PropTypes.string,
+   tag: PropTypes.string,
+   location: PropTypes.string,
+   avatar: PropTypes.string,
+   stats: PropTypes.objectOf(PropTypes.number),
+};
