@@ -16,7 +16,7 @@ a,
 li {
   text-decoration: none;
 }
-.Container {
+.container {
   padding: 0 15px;
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -29,18 +29,18 @@ li {
     width: 1200px;
   }
 }
-.Task {
+.task {
   display: flex;
   justify-content: center;
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.FirstTask {
+.firstTask {
   display: flex;
   flex-direction: column;
   background-color: rgb(238, 238, 238);
   align-items: center;
 }
-.ThirdTask {
+.thirdTask {
   background-color: rgb(201, 245, 158);
 }

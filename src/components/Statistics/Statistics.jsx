@@ -1,28 +1,30 @@
-import PropTypes from 'prop-types';
-import styles from './Statistics.module.css'
+import PropTypes from 'prop-types'
+import s from './Statistics.module.css'
+
 export const Statistics = (data) => {
   return (
-    <section className={styles.Statistics}>
-      {data.title !== undefined && (
-        <h2 className={styles.Title}>{data.title}</h2>)}
-      <ul className={styles.StatList}>
-        {data.stats.map(p => (
-          <li className={styles.Item} key={p.id}>
-            <span className={styles.Label}>{p.label}</span>
-            <span className={styles.Percentage}>{p.percentage}%</span>
+    <section className={s.statistics}>
+      {!data.title && (
+        <h2 className={s.title}>{data.title}</h2>)}
+        <ul className={s.statList}>
+        {data.stats.map(stat => (
+          <li className={s.item} key={stat.id}>
+            <span className={s.label}>{stat.label}</span>
+            <span className={s.percentage}>{stat.percentage}%</span>
           </li>
-        ))}
+        )
+      )}
       </ul>
     </section>
   )
 }
-
 Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
-     PropTypes.shape({
-     label: PropTypes.string.isRequired,
-     percentage: PropTypes.number.isRequired,
-     id: PropTypes.string.isRequired
-  }))
+    PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+      id: PropTypes.string.isRequired
+    })
+  )
 }

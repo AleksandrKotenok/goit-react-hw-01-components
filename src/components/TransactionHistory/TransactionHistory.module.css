@@ -1,15 +1,15 @@
-.TransactionHistory {
+.transactionHistory {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.TableRow {
+.tableRow {
   border: 1px solid;
   border-color: black;
   width: 100px;
 }
-.TableTitle {
+.tableTitle {
   border: 1px solid;
   border-color: black;
 }
